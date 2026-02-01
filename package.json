@@ -1,0 +1,17 @@
+{
+  "name": "amusent-park",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "server",
+    "client"
+  ],
+  "scripts": {
+    "start:server": "yarn workspace server dev",
+    "start:client": "yarn workspace client dev",
+    "start": "concurrently \"yarn start:server\" \"yarn start:client\""
+  },
+  "devDependencies": {
+    "concurrently": "^8.0.1"
+  }
+}
